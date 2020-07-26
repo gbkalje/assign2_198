@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--meta charset="utf-8"-->
+	<meta charset="windows-1252">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Admission Form</title>
+	<meta name="viewport" content="widtd=device-widtd, initial-scale=1.0">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <style>
+
+        span{
+          color:red;
+        }
+    
+  
+      </style>
+</head>
+
+<body>
+
+
+<header>
+    <img class="logo" src="imges/logo.png" height="50px">
+    <h1 style="text-align: center; color:yellow"><i>RJSPM COLLEGE</i></h1>
+		<nav class="navbar navbar-style">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#micon">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="micon">
+					<div class="nav navbar-nav navbar-right">
+						<button id="butt" onclick="home123();">Home</button>
+						<button id="butt" onclick="reg11();">Register Here		</button>
+						<button id="butt" onclick="registertab();">Show registration </button>
+					</div>
+					
+				</div>
+			</div>
+	</header>
+
+<div class="main" id="main">
+	<div class="principal">
+		<h4>RJSPM</h4>
+		<br>
+		
+
+			<img src="imges/col1.jpg">
+		<p>
+			The establishment of RJSPM College in 2000 was a great landmark in the history of Higher Education in Western Pune District of Mahara shtra. The college is affiliated to University of Pune. Firstly, Arts and Commerce Degree Courses run by this college in the year 2005.
+		</p>
+	
+	</div>
+	<div class="About">
+		<h4>
+			President
+		</h4><br>
+		<img src="imges/col2.jpg">
+		<p>
+      RJSPM - The Rajmata Jijau Shikshan Prasarak Mandal was established to improve the mental and moral power of the students for the benefit of society. At RJSPM we are committed to encourage students to face the competencies for success. To launch the new technical and non technical courses. The college provides human values with the best facilities for the betterment of the students.
+		</p>
+	</div>
+
+	<div id="str">
+		
+		<div id="box1">
+			<h3>Our Aim</h3>
+			<p>
+				<b>Strengthen</b><br>
+				 Vibrant, flexible and self-reliant institutional processes of higher learning along with an emphasis on value systems to generate prudent citizen of India with “can do attitude”.<br>
+
+				<b>Ensure</b> <br>Recognition as an International Leader in Holistic Education to achieve Global Competency in Corporate and Social World.<br>
+
+				<b>Provide</b> <br> Equal opportunities and ensure support without prejudice for gender, class,caste religion and economic status.<br>
+			</p>
+		</div>
+
+
+		<div id="box2">
+			<h3>KEY HEIGHLIGHTS
+			</h3>
+			<p>
+        Peaceful atmosphere to study..<br>
+
+				Excellent infrastructure facilities..<br>
+
+				Various academic & club activities are organised by the college.<br>
+			</p>
+
+
+
+		</div>
+
+	</div>
+
+	<footer class="footer" >
+	<div class="foot1">
+		<!--div class="f1">
+			<h4>About Us</h4>
+		<p>
+			tde college was founded in 1970 under tde intellectual and academic leadership of tde famous economist Hon. Shri Govardhandas Parikh, tde tden Rector, Bombay University.
+		</p>
+		
+	
+	   </div-->
+		<div class="f2">
+			<h4>Contact Us</h4>
+		<p>
+      Contact Person	Rajmata Jijau Shikshan Prasarak Mandal<br>
+      Contact number	9552569451<br>
+      Email
+      lambs115
+      yahoo.co.in<br>
+      Official Website	http://www.rjspmicmr.com/
+		</p>
+		</div>
+		</div>
+	<div class="foot2">
+		<h4>ADDRESS
+      Opp. Amphenol Company
+      Near Landewadi
+      Bhosari<br>
+      Pune -
+      Pune
+      411039.</h4>
+	</div>
+	</footer>
+
+	</div>
+
+	
+	
+<div class="cont">
+  
+  <div class="tab"id="tab"  style="display: none;  padding: 30px;" > 
+    <h1 style="text-align: center;">REGISTER HERE</h1>
+    Full name  :<input type="text" name="fname" id="fname" class="form-control">
+    <span id="fullname" class="text-danger font-weight-bold"></span><br>
+    
+    Email :<input type="text" name="eid" id="emailid" class="form-control">
+		<span id="email-id" class="text-danger font-weight-bold"></span><br>
+			<br>
+
+			Password :<input type="text" name="sname" id="sname" class="form-control">
+			<span id="schooln" class="text-danger font-weight-bold"></span><br>
+
+			Phone :<input type="text" name="marks" id="marks" class="form-control">
+			<span id="hsc" class="text-danger font-weight-bold"></span><br>
+
+		
+
+			adrress:<input type="text" name="marks" id="address" class="form-control">
+      <span id="res-address" class="text-danger font-weight-bold"></span><br>
+      
+      State :<input type="text" name="marks" id="side" class="form-control">
+			<span id="sidechoose" class="text-danger font-weight-bold"></span><br>
+
+    
+
+
+		<div >	<button  id ="sub" onclick="validation();" style="padding: 10px; width: 100%;">verify form valid or not</button>
+			<br>
+			<button style="padding: 10px; width: 100%; "  id ="sub" onclick= "add();">Confirm registration</button>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="tab tab-1" id="registration-table"  style="display: none;  padding: 30px;">
+
+			
+<h1 id="ad" > Information of Students </h1><hr>
+<table class="table table-striped" id="table">
+  <thead>
+    <tr>
+       
+      <th scope="col">Timestamp</th>
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Password</th>
+      <th scope="col">Mobile</th>
+      <th scope="col">Address</th>
+      <th scope="col">State</th>
+      
+      
+    </tr>
+  </thead>
+
+</table>
+	</div>
+
+		
+
+
+
+
+
+
+
+	
+
+
+<script >
+	
+  function add(){
+	
+
+  var table =document.getElementById("table"),
+  newRow=table.insertRow(table.length),
+
+
+    cell1=newRow.insertCell(0),
+  cell2=newRow.insertCell(1),
+  cell3=newRow.insertCell(2),
+  cell4=newRow.insertCell(3),
+  cell5=newRow.insertCell(4),
+  cell6=newRow.insertCell(5),
+  cell7=newRow.insertCell(6),
+  
+  
+  
+fname = document.getElementById('fname').value;
+   password = document.getElementById('sname').value;
+   phone = document.getElementById('marks').value;
+   side = document.getElementById('side').value;
+   address= document.getElementById('address').value;
+  emailid = document.getElementById('emailid').value;
+
+ cell1.innerHTML = dateTime;  
+cell2.innerHTML =fname;
+cell3.innerHTML =emailid;
+cell4.innerHTML =password;
+cell5.innerHTML =phone;
+cell6.innerHTML =address;
+cell7.innerHTML =side;
+
+  
+if(fname != "" && sname != "" && marks != "" && side != "" && address!= "" && emailid != "" )
+  {
+    alert('succes');
+  }
+  else {
+    alert('Unsucceful ');
+  }
+
+
+  
+
+}
+
+ 
+		
+	
+
+    /*function cheakEmail(str1)
+         {
+           var posat=str1.indexOf("@");
+           var posdot=str1.indexOf(".");
+
+           if(posat!=-1 && posdot!=-1){
+              if(posat>=1 && (posdot-posat)>=2 && (str1.length-1-posdot)>=2 && (str1.length-1-posdot)<=5 ) 
+              {
+                return true;
+              }
+              else{
+                return false;
+              }
+           }
+           else{
+               return false;
+           }
+         }
+
+         function checkpassw(str1)
+         {
+            var n1=0;
+            var n2=0;
+            var n3=0;
+
+            for(var i=0;i<str1.length;i++)
+            {
+              if(str1[i]>='a' && str1[i]<='z')
+              {
+                n1++;
+              }
+              else if(str1[i]>='A' && str1[i]<='Z')
+              {
+                n2++;
+              }
+              else if(str1[i]>=0 && str1[i]<=9)
+              {
+                n3++;
+              }
+            }
+
+            if(n1>0 && n2>0 && n3>0)
+            {
+              return true;
+            }
+            else
+            {
+              return false;
+            }
+          }
+         
+         function validateForm()
+         {
+           var fname=document.myform.fname.value;
+           var eml=document.myform.emailid.value;
+           var ps=document.myform.sname.value;
+           var mo=document.myform.schooln.value;
+           
+           var ad1=document.myform.address.value;
+           var st=document.myform.side.value;
+         
+           var i=mo.length;
+           var p=ad.length;
+
+           if(fname ==""){
+				document.getElementById('fullname').innerHTML =" * Please fill tde field";
+				
+				return false;
+			}
+			else if(!isNaN(fname))
+			{
+				document.getElementById('fullname').innerHTML=" * Only charcters are allowed";
+				return false;
+
+			}
+          
+        /* if(nam=="" || nam==null)
+           {
+             document.getElementById("fullname").innerHTML="name cannot be blank"
+             return false;
+           }
+           else if(nam.length<3) 
+           {
+            document.getElementById("fullname").innerHTML="Name should be be greter than 3"
+             return false;
+           }
+           else if(nam.length>30) 
+           {
+            document.getElementById("fullname").innerHTML="Name should be be less than 30"
+             return false;
+           }
+           else if(eml=="" || eml==null)
+           {
+             document.getElementById("email-id").innerHTML="Email cannot be blank"
+             return false;
+           }
+          /* else if(!checkEmail(eml))
+           {
+            document.getElementById("email-id").innerHTML="Email not valid"
+             return false;
+           }
+           else if(ps=="" || ps==null)
+           {
+            document.getElementById("schooln").innerHTML="password cannot be NULL"
+             return false;
+           }
+           else if(ps.length<6)
+           {
+            document.getElementById("schooln").innerHTML="password should be min 6 character"
+             return false;
+           }
+           else if(!checkpassw(ps))
+           {
+            document.getElementById("schooln").innerHTML="password should have min 1 capital letter,1 small letter and 1 digit"
+             return false;
+           }
+
+
+           if(mo=="" || mo==null)
+           {
+             document.getElementById("hsc").innerHTML="Mobile No  cannot be blank"
+             return false;
+           }
+           else if(isNaN(mo))
+           {
+            document.getElementById("hsc").innerHTML="Mobile No  cannot be text"
+             return false;
+           }
+           else if(i<10 )
+           {
+            document.getElementById("hsc").innerHTML="Mobile No not valid "
+             return false;
+           }
+           else if(i>=11)
+           {
+            document.getElementById("hsc").innerHTML="Mobile No not valid "
+             return false;
+           }
+
+
+            if(ad1=="" || ad1==null)
+           {
+            document.getElementById("res-address").innerHTML="Address can't be blank"
+             return false;
+           }
+           else if(p<20 && p>100)
+           {
+            document.getElementById("res-address").innerHTML="Please enter valid address"
+             return false;
+           }
+           else if(st=="")
+           {
+            document.getElementById("sidechoose").innerHTML="Please choice the State"
+             return false;
+           }
+    
+
+
+         }*/
+
+         function validation(){
+
+var fname = document.getElementById('fname').value;
+
+  var sname = document.getElementById('sname').value;
+  var marks = document.getElementById('marks').value;
+  var side = document.getElementById('side').value;
+  var address= document.getElementById('address').value;
+  var emailid = document.getElementById('emailid').value;
+  
+
+  
+
+
+
+  if(fname ==""){
+    document.getElementById('fullname').innerHTML =" * Please fill tde field";
+    
+    return false;
+  }
+  else if(!isNaN(fname))
+  {
+    document.getElementById('fullname').innerHTML=" * Only charcters are allowed";
+    return false;
+
+  }
+   else if(sname == "")
+  {
+    document.getElementById('schooln').innerHTML=" * Please fill password";
+    return false;
+  }
+
+
+   else if(marks == ""){
+    document.getElementById('hsc').innerHTML =" * Please fill Mobile no";
+    return false;
+  }
+   else if(isNaN(marks))
+  {
+    document.getElementById('hsc').innerHTML=" * Only Numbers are allowed";
+    return false;
+
+  }
+
+   else if(side == "")
+  {
+    document.getElementById('sidechoose').innerHTML=" * Please fill state ";
+    return false;
+  }
+   else if(!isNaN(side))
+  {
+    document.getElementById('sidechoose').innerHTML=" * Only Chacters are allowed";
+    return false;
+
+  }
+
+  else if(address == ""){
+    document.getElementById('res-address').innerHTML =" * Please fill Address field";
+    
+    
+    return false;
+  }
+   else if(emailid == " "){
+    document.getElementById('email-id').innerHTML =" * Please fill tde field";
+    return false;
+  } 
+   else if(emailid.indexof('@'))
+  {
+    document.getElementById('email-id').innerHTML=" * @ Invalid Position";
+    return false;
+  
+  }
+
+  
+    
+
+}
+
+
+
+
+function reg11() {
+  var x = document.getElementById("tab");
+  var y = document.getElementById("main");
+  var z = document.getElementById("registration-table");
+    
+    x.style.display  ="block";
+    y.style.display = "none";
+    z.style.display = "none";
+   
+}
+
+function registertab() {
+  var a = document.getElementById("registration-table");
+  var b = document.getElementById("main");
+  var c = document.getElementById("tab");
+
+   a.style.display ="block";
+   b.style.display = "none";
+    c .style.display = "none";
+}
+
+function home123() {
+  var a1 = document.getElementById("main");
+  var b1 = document.getElementById("registration-table");
+  var c1 = document.getElementById("tab");
+
+   a1.style.display ="block";
+   b1.style.display = "none";
+    c1 .style.display = "none";
+}
+  
+ table = document.getElementById("table");
+
+ var today = new Date();
+ var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+ var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();   //calculate current date and time
+ var dateTime = date+' '+time;
+		
+</script>
+
+
+</body>
+</html>
